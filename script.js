@@ -61,7 +61,7 @@ const inputCLP = document.getElementById("monedaCLP")
 
                     if (valorCLP > 0) {
                         const conversion = (valorCLP / selectValor).toFixed(2);
-                        resultado.innerText = `${selectCoin.codigo === 'euro' ? '€' : '$'} ${conversion}`;
+                        resultado.innerText = `${selectCoin.codigo === 'euro' ? '€' : selectCoin.codigo === 'uf' ? 'UF' : '$'} ${conversion}`;
                         renderGrafic();
                     };
                 };
